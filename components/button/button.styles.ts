@@ -7,7 +7,7 @@ export enum Variants {
   DISABLED = 'DISABLED',
 }
 
-interface IButtonProps extends ComponentPropsWithoutRef<'button'> {
+export interface IButtonProps extends ComponentPropsWithoutRef<'button'> {
   variants: Variants;
   children: ReactNode;
   filled?: boolean;

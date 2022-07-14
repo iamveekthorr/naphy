@@ -1,23 +1,9 @@
 import { FC } from 'react';
-import IButtonProps from '@interface/button.interface';
-import { Btn } from './button.styles';
+import { Btn, IButtonProps } from './button.styles';
 
-const Button: FC<IButtonProps> = ({
-  variants,
-  children,
-  bHeight,
-  bWidth,
-  paddingLeftAndRight,
-  ...otherProps
-}) => {
+const Button: FC<IButtonProps> = ({ variants, children, ...otherProps }) => {
   return (
-    <Btn
-      bHeight={bHeight}
-      bWidth={bWidth}
-      paddingLeftAndRight={paddingLeftAndRight}
-      variants={variants}
-      {...otherProps}
-    >
+    <Btn variants={variants} {...otherProps}>
       {children}
     </Btn>
   );
