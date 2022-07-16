@@ -12,7 +12,7 @@ const About: NextPageWithLayout = () => {
 };
 
 About.getLayout = (page: ReactNode) => {
-  return <Layout>{page}</Layout>;
+  return <Layout pageTitle="About Us">{page}</Layout>;
 };
 
 export default About;
