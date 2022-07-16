@@ -71,6 +71,6 @@ export const StyledHeadingOne = styled.h1`
 
 export const StyledHeaderParagraph = styled.p`
   font-size: calc(18rem / 16);
-  font-weight: 100;
+  font-weight: 200;
   line-height: calc(30rem / 16);
 `;
