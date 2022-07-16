@@ -44,6 +44,8 @@ const Home: NextPageWithLayout = () => {
   );
 };
 
-Home.getLayout = (page: ReactNode) => <Layout>{page}</Layout>;
+Home.getLayout = (page: ReactNode) => (
+  <Layout pageTitle={'Home'}>{page}</Layout>
+);
 
 export default Home;

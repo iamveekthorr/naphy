@@ -49,13 +49,10 @@ const Header: FC = () => {
           {toggle && (
             <MobileNav>
               <MobileNavBg>
-                <MobileNavItems>account</MobileNavItems>
-                <MobileNavItems>bank account</MobileNavItems>
-                <MobileNavItems>profile</MobileNavItems>
-                <MobileNavItems>account statement</MobileNavItems>
-                <MobileNavItems>fees</MobileNavItems>
+                <MobileNavItems>home</MobileNavItems>
+                <MobileNavItems>services</MobileNavItems>
                 <MobileNavItems>about</MobileNavItems>
-                <MobileNavItems>sign out</MobileNavItems>
+                <MobileNavItems>contact</MobileNavItems>
               </MobileNavBg>
             </MobileNav>
           )}
