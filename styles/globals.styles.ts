@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: 'Sora', sans-serif;
+        font-family: 'Sora';
         line-height: calc(16.5rem/16);
         position: relative;
         user-select: none;
