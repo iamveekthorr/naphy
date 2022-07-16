@@ -1,6 +1,11 @@
 import { FC } from 'react';
 import Container from '@layouts/layout.styles';
-import { HeaderBg, MenuItems, NavContainer } from './nav.styles';
+import {
+  HeaderBg,
+  MenuItems,
+  NavContainer,
+  StyledNavListItem,
+} from './nav.styles';
 import {
   Hamburger,
   MobileNavBg,
@@ -8,6 +13,7 @@ import {
 } from '@components/mobile-nav/mobile-nav.styles';
 import useToggle from '@hooks/useToggle.hook';
 import MobileNav from '@components/mobile-nav/mobile-nav.component';
+import Link from 'next/link';
 
 const Header: FC = () => {
   const [toggle, doToggle] = useToggle();
@@ -19,10 +25,22 @@ const Header: FC = () => {
 
           {/* for desktop */}
           <MenuItems>
-            <li>home</li>
-            <li>about</li>
-            <li>contact</li>
-            <li>services</li>
+            <StyledNavListItem>
+              <Link href="/">
+                <a>home</a>
+              </Link>
+            </StyledNavListItem>
+            <StyledNavListItem>services</StyledNavListItem>
+            <StyledNavListItem>
+              <Link href="/about">
+                <a>about</a>
+              </Link>
+            </StyledNavListItem>
+            <StyledNavListItem>
+              <Link href="/contact">
+                <a>contact</a>
+              </Link>
+            </StyledNavListItem>
           </MenuItems>
 
           {/* for mobile */}

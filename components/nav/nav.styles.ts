@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderBg = styled.nav`
-  background: orangered;
+  background: white;
 `;
 
 export const NavContainer = styled.section`
@@ -19,5 +19,13 @@ export const MenuItems = styled.ul`
 
   @media only screen and (min-width: 50rem) {
     display: flex;
+    & > *:not(:last-child) {
+      margin-right: calc(50rem / 16);
+    }
   }
+`;
+
+export const StyledNavListItem = styled.li`
+  text-transform: capitalize;
+  font-weight: 400;
 `;

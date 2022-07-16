@@ -17,7 +17,7 @@ export interface IButtonProps extends ComponentPropsWithoutRef<'button'> {
 export const Btn = styled.button<IButtonProps>`
   padding: calc(16rem / 16) calc(48rem / 16);
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   font-size: inherit;
   text-transform: capitalize;
   font-family: inherit;
@@ -30,7 +30,7 @@ export const Btn = styled.button<IButtonProps>`
   ${({ variants }) =>
     variants === Variants.PRIMARY &&
     `
-        background:blue;
+        background:#E63946;
         color: white;
     `}
 
@@ -38,8 +38,8 @@ export const Btn = styled.button<IButtonProps>`
     variants === Variants.OUTLINED &&
     `
         background: transparent;
-        border: 2px solid blue;
-        color: blue;
+        border: 2px solid #E63946;
+        color: #E63946;
     `}
     
     ${({ variants }) =>

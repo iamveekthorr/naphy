@@ -4,6 +4,8 @@ import Layout from '@layouts/layout.components';
 import Container from '@layouts/layout.styles';
 import {
   StyledHeader,
+  StyledHeaderParagraph,
+  StyledHeadingOne,
   StyledHeadingTextContainer,
   StyledImageContainer,
   StyledLeftSectionContainer,
@@ -19,13 +21,13 @@ const Home: NextPageWithLayout = () => {
       <StyledHeader>
         <StyledLeftSectionContainer>
           <StyledHeadingTextContainer>
-            <h1> namphy language academy</h1>
-            <p>
+            <StyledHeadingOne> come learn with us</StyledHeadingOne>
+            <StyledHeaderParagraph>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus recusandae, eveniet suscipit necessitatibus mollitia
               quasi! Delectus atque iste aliquid at quas suscipit iusto sunt
               quos, corporis ratione veniam aspernatur vitae!
-            </p>
+            </StyledHeaderParagraph>
           </StyledHeadingTextContainer>
           <Button variants={Variants.PRIMARY}>contact us</Button>
         </StyledLeftSectionContainer>
