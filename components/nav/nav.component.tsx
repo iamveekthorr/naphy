@@ -14,9 +14,11 @@ import {
 import useToggle from '@hooks/useToggle.hook';
 import MobileNav from '@components/mobile-nav/mobile-nav.component';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Header: FC = () => {
   const [toggle, doToggle] = useToggle();
+  const { push } = useRouter();
   return (
     <HeaderBg>
       <Container>
@@ -49,10 +51,18 @@ const Header: FC = () => {
           {toggle && (
             <MobileNav>
               <MobileNavBg>
-                <MobileNavItems>home</MobileNavItems>
-                <MobileNavItems>services</MobileNavItems>
-                <MobileNavItems>about</MobileNavItems>
-                <MobileNavItems>contact</MobileNavItems>
+                <MobileNavItems onClick={() => push('/home')}>
+                  home
+                </MobileNavItems>
+                <MobileNavItems onClick={() => push('/services')}>
+                  services
+                </MobileNavItems>
+                <MobileNavItems onClick={() => push('/about')}>
+                  about
+                </MobileNavItems>
+                <MobileNavItems onClick={() => push('/contact')}>
+                  contact
+                </MobileNavItems>
               </MobileNavBg>
             </MobileNav>
           )}

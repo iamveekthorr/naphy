@@ -72,5 +72,56 @@ export const StyledHeadingOne = styled.h1`
 export const StyledHeaderParagraph = styled.p`
   font-size: calc(18rem / 16);
   font-weight: 200;
-  line-height: calc(30rem / 16);
+  line-height: calc(35rem / 16);
+`;
+
+export const StyledBenefitsSection = styled.section`
+  padding: calc(16rem / 16);
+  @media only screen and (min-width: 50rem) {
+    margin: calc(50rem / 16) 0;
+  }
+`;
+
+export const StyledBenefit = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & > :first-child {
+    margin-bottom: calc(30rem / 16);
+  }
+  @media only screen and (min-width: 50rem) {
+    width: calc(300rem / 16);
+  }
+`;
+
+export const StyledBenefitsImageContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & > *:not(:last-child) {
+    margin-bottom: calc(50rem / 16);
+  }
+  @media only screen and (min-width: 50rem) {
+    flex-direction: row;
+    & > *:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+`;
+
+export const StyledBenefitsImage = styled.div<{ isMiddleChild?: boolean }>`
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  height: calc(400em / 16);
+  background-color: orangered;
+  @media only screen and (min-width: 50rem) {
+    height: calc(500rem / 16);
+
+    ${({ isMiddleChild }) => isMiddleChild && `height: calc(600rem/16);`}
+  }
 `;

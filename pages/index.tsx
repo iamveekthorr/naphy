@@ -3,6 +3,10 @@ import { Variants } from '@components/button/button.styles';
 import Layout from '@layouts/layout.components';
 import Container from '@layouts/layout.styles';
 import {
+  StyledBenefit,
+  StyledBenefitsImage,
+  StyledBenefitsImageContainer,
+  StyledBenefitsSection,
   StyledHeader,
   StyledHeaderParagraph,
   StyledHeadingOne,
@@ -23,13 +27,14 @@ const Home: NextPageWithLayout = () => {
           <StyledHeadingTextContainer>
             <StyledHeadingOne> come learn with us</StyledHeadingOne>
             <StyledHeaderParagraph>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Doloribus recusandae, eveniet suscipit necessitatibus mollitia
-              quasi! Delectus atque iste aliquid at quas suscipit iusto sunt
-              quos, corporis ratione veniam aspernatur vitae!
+              Naphy Language Academy creates a platform to learn international
+              languages (for example: French, German and Mandarin) and local
+              languages (For example: Yoruba, Igbo and Hausa). It also prepares
+              pupils to write international exams like Delf Dalf from Alliance
+              Française, TEF Canada, Goethe etc.
             </StyledHeaderParagraph>
           </StyledHeadingTextContainer>
-          <Button variants={Variants.PRIMARY}>contact us</Button>
+          <Button variants={Variants.PRIMARY}>get in touch</Button>
         </StyledLeftSectionContainer>
         <StyledImageContainer>
           <Image
@@ -40,6 +45,36 @@ const Home: NextPageWithLayout = () => {
           />
         </StyledImageContainer>
       </StyledHeader>
+      <StyledBenefitsSection>
+        <StyledBenefitsImageContainer>
+          <StyledBenefit>
+            <StyledBenefitsImage />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias rem esse excepturi qui neque aut est veritatis accusamus
+              fugit magnam!
+            </p>
+          </StyledBenefit>
+
+          <StyledBenefit>
+            <StyledBenefitsImage isMiddleChild />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias rem esse excepturi qui neque aut est veritatis accusamus
+              fugit magnam!
+            </p>
+          </StyledBenefit>
+
+          <StyledBenefit>
+            <StyledBenefitsImage />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias rem esse excepturi qui neque aut est veritatis accusamus
+              fugit magnam!
+            </p>
+          </StyledBenefit>
+        </StyledBenefitsImageContainer>
+      </StyledBenefitsSection>
     </Container>
   );
 };
