@@ -28,17 +28,17 @@ const Header: FC = () => {
           {/* for desktop */}
           <MenuItems>
             <StyledNavListItem>
-              <Link href="/">
+              <Link href="#">
                 <a>home</a>
               </Link>
             </StyledNavListItem>
             <StyledNavListItem>
-              <Link href="/about">
+              <Link href="#about">
                 <a>about</a>
               </Link>
             </StyledNavListItem>
             <StyledNavListItem>
-              <Link href="/contact">
+              <Link href="#contact">
                 <a>contact</a>
               </Link>
             </StyledNavListItem>
@@ -50,15 +50,9 @@ const Header: FC = () => {
           {toggle && (
             <MobileNav>
               <MobileNavBg>
-                <MobileNavItems onClick={() => push('/home')}>
-                  home
-                </MobileNavItems>
-                <MobileNavItems onClick={() => push('/about')}>
-                  about
-                </MobileNavItems>
-                <MobileNavItems onClick={() => push('/contact')}>
-                  contact
-                </MobileNavItems>
+                <MobileNavItems>home</MobileNavItems>
+                <MobileNavItems>about</MobileNavItems>
+                <MobileNavItems>contact</MobileNavItems>
               </MobileNavBg>
             </MobileNav>
           )}

@@ -20,6 +20,12 @@ const Footer: FC = () => (
         <StyledFooterGrid>
           <StyledGridColumn>
             <StyledFooterMenuTitle>contact</StyledFooterMenuTitle>
+            <Link href="#">
+              <a>terms &#38; condition</a>
+            </Link>
+          </StyledGridColumn>
+          <StyledGridColumn>
+            <StyledFooterMenuTitle>address</StyledFooterMenuTitle>
 
             <StyledFooterUnOrderedList>
               <li>
