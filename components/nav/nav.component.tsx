@@ -32,7 +32,6 @@ const Header: FC = () => {
                 <a>home</a>
               </Link>
             </StyledNavListItem>
-            <StyledNavListItem>services</StyledNavListItem>
             <StyledNavListItem>
               <Link href="/about">
                 <a>about</a>
@@ -53,9 +52,6 @@ const Header: FC = () => {
               <MobileNavBg>
                 <MobileNavItems onClick={() => push('/home')}>
                   home
-                </MobileNavItems>
-                <MobileNavItems onClick={() => push('/services')}>
-                  services
                 </MobileNavItems>
                 <MobileNavItems onClick={() => push('/about')}>
                   about

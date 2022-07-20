@@ -77,8 +77,9 @@ export const StyledHeaderParagraph = styled.p`
 
 export const StyledBenefitsSection = styled.section`
   padding: calc(16rem / 16);
+  margin-top: calc(50rem / 16);
   @media only screen and (min-width: 50rem) {
-    margin: calc(50rem / 16) 0;
+    margin-top: calc(149rem / 16);
   }
 `;
 
@@ -91,8 +92,26 @@ export const StyledBenefit = styled.div`
     margin-bottom: calc(30rem / 16);
   }
   @media only screen and (min-width: 50rem) {
-    width: calc(300rem / 16);
+    width: calc(350rem / 16);
   }
+`;
+export const StyledServiceHeading = styled.p`
+  font-weight: 700;
+  font-size: calc(32rem / 16);
+  text-transform: capitalize;
+  margin-bottom: calc(50rem / 16);
+`;
+
+export const StyledBenefitImageHeading = styled.p`
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: calc(24rem / 16);
+  margin-bottom: calc(30rem / 16);
+`;
+
+export const StyledBenefitDescription = styled.p`
+  line-height: calc(30rem / 16);
+  font-weight: 200;
 `;
 
 export const StyledBenefitsImageContainer = styled.section`

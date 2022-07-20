@@ -4,6 +4,8 @@ import Layout from '@layouts/layout.components';
 import Container from '@layouts/layout.styles';
 import {
   StyledBenefit,
+  StyledBenefitDescription,
+  StyledBenefitImageHeading,
   StyledBenefitsImage,
   StyledBenefitsImageContainer,
   StyledBenefitsSection,
@@ -13,11 +15,15 @@ import {
   StyledHeadingTextContainer,
   StyledImageContainer,
   StyledLeftSectionContainer,
+  StyledServiceHeading,
 } from '@styles/index.styles';
 import Image from 'next/image';
 import { ReactNode } from 'react';
 import { NextPageWithLayout } from './_app';
-import headerImage from '@public/header-image.jpg';
+import headerImage from '@public/images/header-image.jpg';
+import img1 from '@public/images/img1.jpg';
+import img2 from '@public/images/img2.jpg';
+import img3 from '@public/images/img3.jpg';
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -46,32 +52,64 @@ const Home: NextPageWithLayout = () => {
         </StyledImageContainer>
       </StyledHeader>
       <StyledBenefitsSection>
+        <StyledServiceHeading>our services</StyledServiceHeading>
         <StyledBenefitsImageContainer>
           <StyledBenefit>
-            <StyledBenefitsImage />
-            <p>
+            <StyledBenefitsImage>
+              <Image
+                src={img1}
+                quality="high"
+                alt="image-1"
+                layout="fill"
+                objectFit="cover"
+              />
+            </StyledBenefitsImage>
+            <StyledBenefitImageHeading>
+              school tutoring
+            </StyledBenefitImageHeading>
+            <StyledBenefitDescription>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Molestias rem esse excepturi qui neque aut est veritatis accusamus
               fugit magnam!
-            </p>
+            </StyledBenefitDescription>
           </StyledBenefit>
 
           <StyledBenefit>
-            <StyledBenefitsImage isMiddleChild />
-            <p>
+            <StyledBenefitsImage isMiddleChild>
+              <Image
+                src={img2}
+                quality="high"
+                layout="fill"
+                objectFit="cover"
+                alt="image-1"
+              />
+            </StyledBenefitsImage>
+            <StyledBenefitImageHeading>
+              virtual learning
+            </StyledBenefitImageHeading>
+            <StyledBenefitDescription>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Molestias rem esse excepturi qui neque aut est veritatis accusamus
               fugit magnam!
-            </p>
+            </StyledBenefitDescription>
           </StyledBenefit>
 
           <StyledBenefit>
-            <StyledBenefitsImage />
-            <p>
+            <StyledBenefitsImage>
+              <Image
+                src={img3}
+                layout="fill"
+                objectFit="cover"
+                quality="high"
+                alt="image-2"
+              />
+            </StyledBenefitsImage>
+            <StyledBenefitImageHeading>organization</StyledBenefitImageHeading>
+            <StyledBenefitDescription>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Molestias rem esse excepturi qui neque aut est veritatis accusamus
               fugit magnam!
-            </p>
+            </StyledBenefitDescription>
           </StyledBenefit>
         </StyledBenefitsImageContainer>
       </StyledBenefitsSection>

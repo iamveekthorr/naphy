@@ -20,11 +20,11 @@ const Footer: FC = () => (
         <StyledFooterGrid>
           <StyledGridColumn>
             <StyledFooterMenuTitle>contact</StyledFooterMenuTitle>
+
             <StyledFooterUnOrderedList>
               <li>
-                <Link href="#">
-                  <a>terms &#38; condition</a>
-                </Link>
+                19 Onitolo Street off Gbaja road beside St Anthony Catholic
+                church Gbaja, Surulere.
               </li>
               <li>
                 <Link href="#">
@@ -48,14 +48,6 @@ const Footer: FC = () => (
               </li>
             </StyledFooterUnOrderedList>
           </StyledGridColumn>
-
-          <StyledGridColumn>
-            <StyledFooterMenuTitle>services</StyledFooterMenuTitle>
-            <Link href="#">
-              <a>terms &#38; condition</a>
-            </Link>
-          </StyledGridColumn>
-
           <StyledGridColumn>
             <StyledFooterMenuTitle>about</StyledFooterMenuTitle>
             <Link href="#">
