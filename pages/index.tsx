@@ -206,9 +206,9 @@ const Home: NextPageWithLayout = () => {
                   anywhere.
                 </span>
                 THE BENEFITS: 1. It is an added value to any course in life. 2.
-                It develops an "ear" for languages. 3. It gives a career
-                advantage. 4. It helps in communicating and connecting with
-                other people and their culture.
+                It develops an &quot;ear&quot; for languages. 3. It gives a
+                career advantage. 4. It helps in communicating and connecting
+                with other people and their culture.
               </StyledOverViewTextContainer>
             </div>
           </StyledAboutUsFlex>
