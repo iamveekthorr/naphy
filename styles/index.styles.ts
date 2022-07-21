@@ -15,9 +15,9 @@ export const StyledHeader = styled.header`
 
 export const StyledImageContainer = styled.div`
   position: relative;
-  height: calc(379rem / 16);
   object-fit: cover;
   width: 100%;
+  height: calc(379rem / 16);
   border-radius: 3px;
   overflow: hidden;
   @media only screen and (min-width: 50rem) {
@@ -221,18 +221,18 @@ export const StyledOverViewHeading = styled.p`
   padding-top: 6px;
 `;
 
-export const StyledOverViewTextContainer = styled.p`
+export const StyledOverViewTextContainer = styled.div`
   line-height: calc(35rem / 16);
   font-weight: 300;
 
-  & > span {
+  & > ol > li {
+    list-style: decimal;
+  }
+  & > ol {
+    padding-left: calc(16rem / 16);
+  }
+  & > p > span {
     display: block;
-    & > ol {
-      padding-left: calc(16rem / 16);
-    }
-    & > ol > li {
-      list-style: decimal;
-    }
   }
   & > span:not(:last-of-type) {
     margin-bottom: calc(32rem / 16);

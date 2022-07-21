@@ -65,6 +65,7 @@ const Home: NextPageWithLayout = () => {
               alt="image to be in the header"
               quality={100}
               layout="fill"
+              objectFit="cover"
             />
           </StyledImageContainer>
         </StyledHeader>
@@ -179,21 +180,23 @@ const Home: NextPageWithLayout = () => {
             <div>
               <StyledOverViewHeading>overview</StyledOverViewHeading>
               <StyledOverViewTextContainer>
-                <span>
-                  Naphy Language Academy creates a platform to learn
-                  international languages (for example: French, German and
-                  Mandarin) and local languages (For example: Yoruba, Igbo and
-                  Hausa). It also prepares students to write international exams
-                  like Delf Dalf from Alliance Française, TEF Canada, Goethe
-                  etc.
-                </span>
-                <span>
-                  The academy started since 2015 but presently runs weekend
-                  classes at the centre. The world is a global village and
-                  knowledge in more than one language is an added value that
-                  would play a vital role in social and economic communications
-                  and any international career pursuit.
-                </span>
+                <p>
+                  <span>
+                    Naphy Language Academy creates a platform to learn
+                    international languages (for example: French, German and
+                    Mandarin) and local languages (For example: Yoruba, Igbo and
+                    Hausa). It also prepares students to write international
+                    exams like Delf Dalf from Alliance Française, TEF Canada,
+                    Goethe etc.
+                  </span>
+                  <span>
+                    The academy started since 2015 but presently runs weekend
+                    classes at the centre. The world is a global village and
+                    knowledge in more than one language is an added value that
+                    would play a vital role in social and economic
+                    communications and any international career pursuit.
+                  </span>
+                </p>
               </StyledOverViewTextContainer>
             </div>
           </StyledAboutUsFlex>
@@ -210,22 +213,22 @@ const Home: NextPageWithLayout = () => {
             <div>
               <StyledOverViewHeading>our goal</StyledOverViewHeading>
               <StyledOverViewTextContainer>
-                <span>
-                  To prepare our candidates futuristically to stand out
-                  anywhere.
-                </span>
-                <span>
-                  <strong>THE BENEFITS:</strong>
-                  <ol>
-                    <li>It is an added value to any course in life.</li>
-                    <li>It develops an &quot;ear&quot; for languages.</li>
-                    <li> It gives a career advantage.</li>
-                    <li>
-                      It helps in communicating and connecting with other people
-                      and their culture.
-                    </li>
-                  </ol>
-                </span>
+                <p>
+                  <span>
+                    To prepare our candidates futuristically to stand out
+                    anywhere.
+                  </span>
+                </p>
+                <strong>THE BENEFITS:</strong>
+                <ol>
+                  <li>It is an added value to any course in life.</li>
+                  <li>It develops an &quot;ear&quot; for languages.</li>
+                  <li> It gives a career advantage.</li>
+                  <li>
+                    It helps in communicating and connecting with other people
+                    and their culture.
+                  </li>
+                </ol>
               </StyledOverViewTextContainer>
             </div>
           </StyledAboutUsFlex>

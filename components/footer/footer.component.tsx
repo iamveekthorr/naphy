@@ -64,12 +64,12 @@ const Footer: FC = () => (
             </StyledFooterUnOrderedList>
             <StyledFooterUnOrderedList>
               <li>
-                <Link href="#about_us">About</Link>
+                <Link href="#about">About</Link>
               </li>
             </StyledFooterUnOrderedList>
             <StyledFooterUnOrderedList>
               <li>
-                <Link href="#service">Service</Link>
+                <Link href="#services">Services</Link>
               </li>
             </StyledFooterUnOrderedList>
             <StyledFooterUnOrderedList>
