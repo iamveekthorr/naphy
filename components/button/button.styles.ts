@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { ComponentPropsWithoutRef, ReactNode } from 'react';
 
 export enum Variants {
-  OUTLINED = 'OUTLINED',
+  WHITE = 'WHITE',
   PRIMARY = 'PRIMARY',
   DISABLED = 'DISABLED',
 }
@@ -35,11 +35,10 @@ export const Btn = styled.button<IButtonProps>`
     `}
 
   ${({ variants }) =>
-    variants === Variants.OUTLINED &&
+    variants === Variants.WHITE &&
     `
-        background: transparent;
-        border: 2px solid #E63946;
-        color: #E63946;
+        background: #1D3557;
+        color: white;
     `}
     
     ${({ variants }) =>

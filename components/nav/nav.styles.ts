@@ -6,7 +6,7 @@ export const HeaderBg = styled.nav`
 
 export const NavContainer = styled.section`
   display: flex;
-  padding: calc(16rem / 16);
+  padding: calc(32rem / 16) calc(16rem / 16);
   align-items: center;
 
   & > :first-child {
@@ -23,6 +23,13 @@ export const MenuItems = styled.ul`
       margin-right: calc(50rem / 16);
     }
   }
+`;
+
+export const StyledLogoContainer = styled.div`
+  object-fit: cover;
+  position: relative;
+  height: calc(50em / 16);
+  width: calc(150em / 16);
 `;
 
 export const StyledNavListItem = styled.li`

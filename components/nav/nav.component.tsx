@@ -4,6 +4,7 @@ import {
   HeaderBg,
   MenuItems,
   NavContainer,
+  StyledLogoContainer,
   StyledNavListItem,
 } from './nav.styles';
 import {
@@ -16,6 +17,9 @@ import MobileNav from '@components/mobile-nav/mobile-nav.component';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import logo from '@public/images/logo.jpeg';
+import Image from 'next/image';
+
 const Header: FC = () => {
   const [toggle, doToggle] = useToggle();
   const { push } = useRouter();
@@ -23,7 +27,9 @@ const Header: FC = () => {
     <HeaderBg>
       <Container>
         <NavContainer>
-          <div>logo</div>
+          <StyledLogoContainer>
+            <Image src={logo} quality="high" alt="image-2" />
+          </StyledLogoContainer>
 
           {/* for desktop */}
           <MenuItems>
@@ -35,6 +41,11 @@ const Header: FC = () => {
             <StyledNavListItem>
               <Link href="#about">
                 <a>about</a>
+              </Link>
+            </StyledNavListItem>
+            <StyledNavListItem>
+              <Link href="#services">
+                <a>services</a>
               </Link>
             </StyledNavListItem>
             <StyledNavListItem>

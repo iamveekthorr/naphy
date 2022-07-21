@@ -25,7 +25,7 @@ export const StyledFooterGrid = styled.section`
   padding: calc(16rem / 16);
 
   @media only screen and (min-width: 50rem) {
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
     grid-row: auto;
     column-gap: calc(50rem / 16);
     row-gap: calc(70rem / 16);
@@ -48,4 +48,13 @@ export const StyledFooterUnOrderedList = styled.ul`
   & > *:not(:last-child) {
     margin-bottom: calc(25rem / 16);
   }
+`;
+
+export const StyledAddress = styled.li`
+  line-height: calc(25rem / 16);
+  font-weight: 300;
+`;
+
+export const HorizontalRule = styled.hr`
+  border: 1px solid black;
 `;

@@ -14,11 +14,18 @@ import {
   StyledBenefitsImage,
   StyledBenefitsImageContainer,
   StyledBenefitsSection,
+  StyledContactFormImage,
+  StyledContactFormRightSide,
+  StyledContactLeftSideBg,
+  StyledContactSection,
+  StyledContactUsHeading,
+  StyledContactUsSubheading,
   StyledHeader,
   StyledHeaderParagraph,
   StyledHeadingOne,
   StyledHeadingTextContainer,
   StyledImageContainer,
+  StyledInnerContainer,
   StyledLeftSectionContainer,
   StyledOverViewHeading,
   StyledOverViewTextContainer,
@@ -33,6 +40,8 @@ import img1 from '@public/images/img1.jpg';
 import img2 from '@public/images/img2.jpg';
 import img3 from '@public/images/img3.jpg';
 import about_us1 from '@public/images/about_us-top1.jpg';
+import contact_us from '@public/images/contact_us.jpg';
+import { Form, FormInputContainer } from '@components/form/form.styles';
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -135,8 +144,8 @@ const Home: NextPageWithLayout = () => {
       </Container>
 
       <Container>
-        <StyledAboutUsSection>
-          <StyledServiceHeadingContainer id="about">
+        <StyledAboutUsSection id="about">
+          <StyledServiceHeadingContainer>
             <StyledServiceHeading>About us</StyledServiceHeading>
             <p>
               We use both formal and informal ways to teach the children making
@@ -205,15 +214,59 @@ const Home: NextPageWithLayout = () => {
                   To prepare our candidates futuristically to stand out
                   anywhere.
                 </span>
-                THE BENEFITS: 1. It is an added value to any course in life. 2.
-                It develops an &quot;ear&quot; for languages. 3. It gives a
-                career advantage. 4. It helps in communicating and connecting
-                with other people and their culture.
+                <span>
+                  <strong>THE BENEFITS:</strong>
+                  <ol>
+                    <li>It is an added value to any course in life.</li>
+                    <li>It develops an &quot;ear&quot; for languages.</li>
+                    <li> It gives a career advantage.</li>
+                    <li>
+                      It helps in communicating and connecting with other people
+                      and their culture.
+                    </li>
+                  </ol>
+                </span>
               </StyledOverViewTextContainer>
             </div>
           </StyledAboutUsFlex>
         </StyledAboutUsSection>
       </Container>
+
+      <StyledContactSection id="contact">
+        <StyledContactLeftSideBg>
+          <StyledInnerContainer>
+            <StyledContactUsHeading>send us a message</StyledContactUsHeading>
+            <StyledContactUsSubheading>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </StyledContactUsSubheading>
+
+            <Form>
+              <FormInputContainer>
+                <label htmlFor="email">Email</label>
+                <input type="text" placeholder="jondoe@email.com" />
+              </FormInputContainer>
+              <FormInputContainer>
+                <label htmlFor="email">message</label>
+                <textarea placeholder="tell us what service you require." />
+              </FormInputContainer>
+
+              <Button variants={Variants.WHITE}>send</Button>
+            </Form>
+          </StyledInnerContainer>
+        </StyledContactLeftSideBg>
+
+        <StyledContactFormRightSide>
+          <StyledContactFormImage>
+            <Image
+              src={contact_us}
+              alt="top image"
+              layout="fill"
+              objectFit="cover"
+              quality="high"
+            />
+          </StyledContactFormImage>
+        </StyledContactFormRightSide>
+      </StyledContactSection>
     </>
   );
 };

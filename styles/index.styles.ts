@@ -4,7 +4,7 @@ export const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: calc(30rem / 16);
+  margin-top: calc(50rem / 16);
   padding: calc(16rem / 16);
   @media only screen and (min-width: 50rem) {
     flex-direction: row;
@@ -218,6 +218,7 @@ export const StyledOverViewHeading = styled.p`
   font-weight: 700;
   font-size: calc(32rem / 16);
   text-transform: capitalize;
+  padding-top: 6px;
 `;
 
 export const StyledOverViewTextContainer = styled.p`
@@ -226,6 +227,12 @@ export const StyledOverViewTextContainer = styled.p`
 
   & > span {
     display: block;
+    & > ol {
+      padding-left: calc(16rem / 16);
+    }
+    & > ol > li {
+      list-style: decimal;
+    }
   }
   & > span:not(:last-of-type) {
     margin-bottom: calc(32rem / 16);
@@ -242,7 +249,78 @@ export const StyledAboutUsBottomImageContainer = styled.div`
   position: relative;
   width: 100%;
   height: calc(415rem / 16);
+  margin-bottom: calc(32rem / 16);
+  @media only screen and (min-width: 50rem) {
+    margin-bottom: 0;
+    width: calc(100% / 2);
+  }
+`;
+
+export const StyledContactSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(50rem / 16);
+  margin-bottom: calc(50rem / 16);
+  @media only screen and (min-width: 50rem) {
+    flex-direction: row;
+  }
+`;
+
+export const StyledContactLeftSideBg = styled.div`
+  background-color: #e63946;
+  color: white;
   @media only screen and (min-width: 50rem) {
     width: calc(100% / 2);
   }
+`;
+
+export const StyledInnerContainer = styled.div`
+  margin: auto;
+  padding-right: calc(32rem / 16);
+  padding-left: calc(32rem / 16);
+  padding-top: calc(70rem / 16);
+  padding-bottom: calc(50rem / 16);
+  @media only screen and (min-width: 50rem) {
+    max-width: 50%;
+  }
+
+  & > form {
+    margin-top: calc(40rem / 16);
+  }
+`;
+
+export const StyledContactFormRightSide = styled.div`
+  height: calc(500rem / 16);
+  @media only screen and (min-width: 50rem) {
+    height: calc(600rem / 16);
+    width: calc(100% / 2);
+  }
+`;
+
+export const StyledContactFormImage = styled.div`
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+  }
+`;
+
+export const StyledContactUsHeading = styled.p`
+  font-size: calc(30rem / 16);
+  font-weight: 200;
+  margin-bottom: calc(16rem / 16);
+  text-transform: capitalize;
+`;
+
+export const StyledContactUsSubheading = styled.p`
+  line-height: calc(25rem / 16);
 `;
