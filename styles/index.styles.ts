@@ -6,6 +6,7 @@ export const StyledHeader = styled.header`
   align-items: center;
   margin-top: calc(50rem / 16);
   padding: calc(16rem / 16);
+  line-height: calc(30rem / 16);
   @media only screen and (min-width: 50rem) {
     flex-direction: row;
     justify-content: space-between;
