@@ -239,7 +239,7 @@ const Home: NextPageWithLayout = () => {
           <StyledInnerContainer>
             <StyledContactUsHeading>send us a message</StyledContactUsHeading>
             <StyledContactUsSubheading>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              We would love to hear from you.For more inquiries or information
             </StyledContactUsSubheading>
 
             <Form>
