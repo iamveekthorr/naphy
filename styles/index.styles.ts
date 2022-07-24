@@ -319,6 +319,7 @@ export const StyledContactUsHeading = styled.p`
   font-weight: 200;
   margin-bottom: calc(16rem / 16);
   text-transform: capitalize;
+  line-height: calc(30rem / 16);
 `;
 
 export const StyledContactUsSubheading = styled.p`

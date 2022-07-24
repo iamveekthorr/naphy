@@ -39,6 +39,8 @@ import headerImage from '@public/images/header-image.jpg';
 import img1 from '@public/images/img1.jpg';
 import img2 from '@public/images/img2.jpg';
 import img3 from '@public/images/img3.jpg';
+import about_top1 from '@public/images/about-top1.jpg';
+import about_top2 from '@public/images/about-top2.jpg';
 import about_us1 from '@public/images/about_us-top1.jpg';
 import contact_us from '@public/images/contact_us.jpg';
 import { Form, FormInputContainer } from '@components/form/form.styles';
@@ -75,9 +77,8 @@ const Home: NextPageWithLayout = () => {
           <StyledServiceHeadingContainer>
             <StyledServiceHeading>our services</StyledServiceHeading>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              repellat blanditiis unde quo neque porro quos minus necessitatibus
-              perferendis error.
+              We provide language classes for schools, companies and
+              organizations,both virtual and real-time.
             </p>
           </StyledServiceHeadingContainer>
           <StyledBenefitsImageContainer>
@@ -95,9 +96,8 @@ const Home: NextPageWithLayout = () => {
                 school tutoring
               </StyledBenefitImageHeading>
               <StyledBenefitDescription>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias rem esse excepturi qui neque aut est veritatis
-                accusamus fugit magnam!
+                We provide quality language classes for your students. Hands-on
+                and really interactive
               </StyledBenefitDescription>
             </StyledBenefit>
 
@@ -115,9 +115,8 @@ const Home: NextPageWithLayout = () => {
                 virtual learning
               </StyledBenefitImageHeading>
               <StyledBenefitDescription>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias rem esse excepturi qui neque aut est veritatis
-                accusamus fugit magnam!
+                We provide virtual classes and courses tailored to meet your
+                proficiency.
               </StyledBenefitDescription>
             </StyledBenefit>
 
@@ -135,9 +134,9 @@ const Home: NextPageWithLayout = () => {
                 organization
               </StyledBenefitImageHeading>
               <StyledBenefitDescription>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias rem esse excepturi qui neque aut est veritatis
-                accusamus fugit magnam!
+                We Organize education based- trainings for teachers and owners
+                of school. We provide translation services And organize
+                excursions.
               </StyledBenefitDescription>
             </StyledBenefit>
           </StyledBenefitsImageContainer>
@@ -159,7 +158,7 @@ const Home: NextPageWithLayout = () => {
             <StyledAboutUsImageContainer>
               <StyledAboutUsTopImageContainer>
                 <Image
-                  src={about_us1}
+                  src={about_top1}
                   alt="top image"
                   layout="fill"
                   objectFit="cover"
@@ -168,7 +167,7 @@ const Home: NextPageWithLayout = () => {
               </StyledAboutUsTopImageContainer>
               <StyledAboutUsTopImageContainer>
                 <Image
-                  src={about_us1}
+                  src={about_top2}
                   alt="top image"
                   layout="fill"
                   objectFit="cover"
