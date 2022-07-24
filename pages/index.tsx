@@ -40,7 +40,7 @@ import img1 from '@public/images/img1.jpg';
 import img2 from '@public/images/img2.jpg';
 import img3 from '@public/images/img3.jpg';
 import about_top1 from '@public/images/about-top1.jpg';
-import about_top2 from '../public/images/about-top2.jpg';
+import about_top2 from '@public/images/about-top2.jpg';
 import about_us1 from '@public/images/about_us-top1.jpg';
 import contact_us from '@public/images/contact_us.jpg';
 import { Form, FormInputContainer } from '@components/form/form.styles';
@@ -167,7 +167,7 @@ const Home: NextPageWithLayout = () => {
               </StyledAboutUsTopImageContainer>
               <StyledAboutUsTopImageContainer>
                 <Image
-                  src={about_top2}
+                  src={about_top1}
                   alt="top image"
                   layout="fill"
                   objectFit="cover"
