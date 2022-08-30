@@ -20,6 +20,9 @@ import { useRouter } from 'next/router';
 import logo from '@public/images/logo.jpeg';
 import Image from 'next/image';
 
+import closeNav from '@public/svg/chevron-up.svg';
+import { CloseNavContainer } from '@styles/index.styles';
+
 const Header: FC = () => {
   const [toggle, doToggle] = useToggle();
   const { push } = useRouter();
@@ -61,9 +64,24 @@ const Header: FC = () => {
           {toggle && (
             <MobileNav>
               <MobileNavBg>
-                <MobileNavItems>home</MobileNavItems>
-                <MobileNavItems>about</MobileNavItems>
-                <MobileNavItems>contact</MobileNavItems>
+                <MobileNavItems>
+                  <Link href="#">
+                    <a>home</a>
+                  </Link>
+                </MobileNavItems>
+                <MobileNavItems>
+                  <Link href="#about">
+                    <a>about</a>
+                  </Link>
+                </MobileNavItems>
+                <MobileNavItems>
+                  <Link href="#contact">
+                    <a>contact</a>
+                  </Link>
+                </MobileNavItems>
+                <CloseNavContainer onClick={doToggle}>
+                  <Image src={closeNav} alt="" height="50" width="50" />
+                </CloseNavContainer>
               </MobileNavBg>
             </MobileNav>
           )}

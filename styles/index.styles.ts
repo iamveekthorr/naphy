@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+export const CloseNavContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(16rem / 16) 0;
+  /* background-color: white; */
+`;
+
 export const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
